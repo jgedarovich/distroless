@@ -7,7 +7,7 @@ node {
     stage('run bazel') {
         sh 'ls -lrta'
 
-        dir('examples/java/build') {
+        dir('examples/java') {
             sh 'bazel build'
         }
     }
