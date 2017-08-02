@@ -10,7 +10,7 @@ node {
         dir('examples/java') {
             sh 'ls -lrta'
             sh 'java -version'
-            sh 'bazel build'
+            sh 'bazel build hello'
         }
     }
 }
