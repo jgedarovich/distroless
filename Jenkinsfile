@@ -1,5 +1,9 @@
 #!groovy
 node {
+    stage('Checkout'){
+        checkout scm
+    }
+
     stage('run bazel') {
         sh 'ls -lrta'
 
